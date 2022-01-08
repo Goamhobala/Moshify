@@ -97,3 +97,37 @@ a {
     font-size: 1.5rem;
   }
 }
+
+.badges {
+  padding: 0.6rem 1.5rem;
+  white-space: nowrap;
+  border-radius: 25px;
+  font-weight: 700;
+}
+
+.badges--domain-price {
+  font-size: 2rem;
+  background-color: var(--color_whitebg);
+  color: var(--color_whitebg_heading);
+  transition: color, background-color 0.5s;
+}
+
+.badges--domain-price:hover {
+  background-color: #00d9ff;
+  color: #ffffff;
+}
+
+.badges--discount {
+  font-size: 1.6rem;
+  background-color: #01c4e7;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 1024px) {
+  .badges--domain-price {
+    font-size: 1.5rem;
+  }
+  .badges--discount {
+    font-size: 1.2rem;
+  }
+}
