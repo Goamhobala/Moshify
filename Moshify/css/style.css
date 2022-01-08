@@ -6,6 +6,8 @@
   /* colour palette */
   --color_whitebg_heading: #1b0760;
   --color_blackbg_heading: #ffffff;
+  --color_blackbg: #000000;
+  --color_whitebg: #f9fafb;
 }
 
 html {
