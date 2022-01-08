@@ -1,1 +1,45 @@
 /* style.css */
+
+/* mobile first */
+
+:root {
+  /* colour palette */
+  --color_whitebg_heading: #1b0760;
+  --color_blackbg_heading: #ffffff;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  background-color: gold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+h1 {
+  font-size: 70rem;
+  color: var(--color_blackbg_heading);
+}
+
+h2 {
+  font-size: 40rem;
+  color: var(--color_whitebg_heading);
+}
+
+h3 {
+  font-size: 30rem;
+}
+
+h4 {
+  font-size: 24rem;
+}
