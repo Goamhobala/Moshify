@@ -159,3 +159,28 @@ a {
 .list--price-badge .list_items {
   display: inline-block;
 }
+
+/* icons */
+
+.icon-container {
+  display: inline-flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 22px;
+}
+
+.icon--greybg {
+  background-color: #f3f9fa;
+}
+
+.icon--blackbg {
+  background-color: var(--color_blackbg);
+}
+
+.icon {
+  fill: #2584ff;
+  width: 30px;
+  height: 30px;
+}
