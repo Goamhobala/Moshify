@@ -99,7 +99,7 @@ a {
 }
 
 .badges {
-  padding: 0.6rem 1.5rem;
+  padding: 0.8rem 1.8rem;
   white-space: nowrap;
   border-radius: 25px;
   font-weight: 700;
@@ -130,4 +130,32 @@ a {
   .badges--discount {
     font-size: 1.2rem;
   }
+}
+
+/* list */
+
+.list {
+  color: var(--color_whitebg_heading);
+  list-style: none;
+}
+
+.list--banner {
+  font-size: 2.4rem;
+  font-weight: 400;
+  list-style-image: url(../images/tick.svg);
+}
+.list--banner .list_items {
+  padding-left: 1rem;
+}
+
+.list--price-badge {
+  display: grid;
+  grid-template-columns: repeat(3, min-content);
+  grid-template-rows: repeat(2, min-content);
+  row-gap: 1.5rem;
+  column-gap: 1.75rem;
+}
+
+.list--price-badge .list_items {
+  display: inline-block;
 }
