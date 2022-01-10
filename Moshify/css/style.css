@@ -9,6 +9,8 @@
   --color_blackbg: #000000;
   --color_whitebg: #f9fafb;
   --color_text: #918ca4;
+  --color_tomato: #ff3400;
+  --color_skyblue: #00d8fe;
 }
 
 html {
@@ -79,7 +81,7 @@ a {
 
 .link-arrow {
   font-size: 2rem;
-  color: #ff3400;
+  color: var(--color_tomato);
 }
 
 .link-arrow::after {
@@ -114,13 +116,13 @@ a {
 
 .badges--domain-price:hover {
   background-color: #00d9ff;
-  color: #ffffff;
+  color: var(--color_blackbg_heading);
 }
 
 .badges--discount {
   font-size: 1.6rem;
   background-color: #01c4e7;
-  color: #ffffff;
+  color: var(--color_blackbg_heading);
 }
 
 @media screen and (min-width: 1024px) {
@@ -172,7 +174,7 @@ a {
 }
 
 .icon--greybg {
-  background-color: #f3f9fa;
+  background-color: var(--color_whitebg);
 }
 
 .icon--blackbg {
@@ -183,4 +185,56 @@ a {
   fill: #2584ff;
   width: 30px;
   height: 30px;
+}
+
+/* button */
+
+.btn {
+  display: block;
+  padding: 1.25rem 1.5rem;
+  border: 0;
+  text-align: center;
+  font-weight: 700;
+  white-space: nowrap;
+  border: 0;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.btn--tomato {
+  background-color: var(--color_tomato);
+  color: var(--color_blackbg_heading);
+  font-size: 0.9rem;
+}
+
+.btn--tomato:hover {
+  background-color: #e81a1a;
+}
+
+.btn--skyblue {
+  background-color: var(--color_skyblue);
+  color: var(--color_blackbg_heading);
+  font-size: 0.825rem;
+}
+
+.btn--skyblue:hover {
+  background-color: #028bad;
+}
+
+.btn--outline {
+  border: 1.2px solid var(--color_whitebg_heading);
+  color: var(--color_whitebg_heading);
+  font-size: 0.75rem;
+}
+
+.btn--outline:hover {
+  background-color: var(--color_whitebg_heading);
+  color: var(--color_blackbg_heading);
+}
+
+@media screen and (min-size: 1024px) {
+  .btn--tomato,
+  .btn--skyblue {
+    font-size: 0.75rem;
+  }
 }
