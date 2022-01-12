@@ -417,20 +417,64 @@ a {
   flex-direction: row;
 }
 
-.media .media__icon {
+.media__icon {
   margin-top: 1rem;
 }
-
-.media .media__content {
+.media__content {
   margin: 0 0 0 2rem;
 }
 
-.media p {
+.media__text {
   font-size: 2rem;
   margin-top: 0;
 }
 
-.media .media__title {
+.media__title {
   margin-top: 0;
   margin-bottom: 0.6rem;
+}
+
+/* quote */
+
+.quote .media {
+  margin-top: 5rem;
+}
+
+.quote .media__title {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  color: #1f0c68;
+  font-size: 3rem;
+}
+
+.quote .media__icon {
+  position: relative;
+  bottom: 1.5rem;
+}
+
+.quote .media__text {
+  opacity: 50%;
+}
+
+.quote__text {
+  font-size: 3rem;
+  font-style: italic;
+}
+
+.quote__text::before {
+  content: open-quote;
+}
+
+.quote__text::after {
+  content: close-quote;
+}
+
+@media screen and (min-width: 1024px) {
+  .quote__text,
+  .quote .media__title {
+    font-size: 2.4rem;
+  }
+
+  .quote .media__text {
+    font-size: 2rem;
+  }
 }
