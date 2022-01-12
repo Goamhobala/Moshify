@@ -299,8 +299,6 @@ a {
 
 .icon--inpara {
   fill: #2584ff;
-  width: 30px;
-  height: 30px;
 }
 
 .icon--search {
@@ -410,4 +408,29 @@ a {
   #input-domain {
     font-size: 1.5rem;
   }
+}
+
+/* media object */
+
+.media {
+  display: flex;
+  flex-direction: row;
+}
+
+.media .media__icon {
+  margin-top: 1rem;
+}
+
+.media .media__content {
+  margin: 0 0 0 2rem;
+}
+
+.media p {
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+.media .media__title {
+  margin-top: 0;
+  margin-bottom: 0.6rem;
 }
