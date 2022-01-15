@@ -351,7 +351,7 @@ a {
 .btn--skyblue {
   background-color: var(--color_skyblue);
   color: var(--color_blackbg_heading);
-  font-size: 0.825rem;
+  font-size: 1.77rem;
 }
 
 .btn--skyblue:hover {
@@ -370,14 +370,24 @@ a {
   color: var(--color_blackbg_heading);
 }
 
-@media screen and (min-size: 1024px) {
+.btn--callout {
+  padding: 2rem 8rem;
+}
+
+@media screen and (min-width: 768px) {
+  .btn--callout {
+    padding: 2rem 5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
   .btn--tomato,
   .btn--skyblue {
-    font-size: 0.75rem;
+    font-size: 1.5rem;
   }
 
   .btn--outline {
-    font-size: 1.4rem;
+    font-size: 2.8rem;
   }
 }
 
@@ -520,6 +530,10 @@ a {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 7rem;
   }
+
+  .grid--callout {
+    grid-template-columns: 1fr auto;
+  }
 }
 
 /* testomonial */
@@ -528,6 +542,7 @@ a {
   background-color: var(--color_blackbg_heading);
   padding: 3.2rem;
   box-shadow: 0 0 7rem rgb(173, 170, 170);
+  border-radius: 10px;
 }
 
 .testomonial__img {
@@ -542,5 +557,45 @@ a {
 @media screen and (min-width: 768px) {
   .testomonial__img {
     margin: 0;
+  }
+}
+
+/* call out */
+
+.callout-container {
+  background-color: #2584ff;
+  border-radius: 10px;
+  padding: 5rem 3rem;
+}
+
+.callout-container .btn {
+  justify-self: center;
+}
+
+.callout__text {
+  text-align: center;
+}
+
+.callout__text > h2,
+.callout__text > p {
+  color: var(--color_blackbg_heading);
+}
+
+.callout__text > h2 {
+  margin-top: 0;
+  margin-bottom: 2.5rem;
+}
+
+.callout__text > p {
+  font-size: 2.4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .callout__text {
+    text-align: left;
+    margin-right: 3rem;
+  }
+  .callout__text > p {
+    font-size: 2rem;
   }
 }
