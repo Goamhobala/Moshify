@@ -357,7 +357,7 @@ a {
 .btn--tomato {
   background-color: var(--color_tomato);
   color: var(--color_blackbg_heading);
-  font-size: 0.9rem;
+  font-size: 1.8rem;
 }
 
 .btn--tomato:hover {
@@ -388,6 +388,9 @@ a {
 
 .btn--callout {
   padding: 2rem 8rem;
+}
+
+.btn--hero {
 }
 
 @media screen and (min-width: 768px) {
@@ -697,9 +700,10 @@ a {
   margin-top: 0;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .container {
-    max-width: 580px;
+    max-width: 1440px;
+    margin: auto;
   }
 }
 
@@ -773,5 +777,60 @@ a {
     padding: 0;
     margin: auto 2rem;
     font-size: 1.6rem;
+  }
+}
+
+/* hero */
+
+.hero {
+  clip-path: polygon(0 0, 100% 0%, 100% 89%, 0% 100%);
+}
+
+.hero__img {
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__content .btn {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.hero__content .block__heading {
+  margin-bottom: 0;
+}
+
+.hero__content .block__header p {
+  font-size: 2rem;
+  margin-bottom: 4rem;
+  letter-spacing: 0.3rem;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    clip-path: none;
+    padding: 9rem 3rem;
+  }
+
+  .hero .grid--1x2 {
+    column-gap: 0;
+    margin: 0 5rem;
+  }
+
+  .hero__content {
+    align-self: center;
+  }
+
+  .hero__content .btn {
+    margin-left: 0;
+  }
+
+  .hero__content .block__header {
+    text-align: left;
   }
 }
