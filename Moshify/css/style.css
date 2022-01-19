@@ -155,6 +155,8 @@ a {
   grid-template-rows: repeat(2, min-content);
   row-gap: 1.5rem;
   column-gap: 1.75rem;
+  align-content: center;
+  justify-content: center;
 }
 
 .list--price-badge .list_items {
@@ -541,7 +543,6 @@ a {
 
 .grid {
   display: grid;
-  align-items: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -653,6 +654,7 @@ a {
 /* block */
 .container {
   max-width: 580px;
+  margin: 0 auto;
 }
 
 .block {
@@ -702,8 +704,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 1440px;
-    margin: auto;
+    max-width: 1140px;
   }
 }
 
@@ -786,6 +787,10 @@ a {
   clip-path: polygon(0 0, 100% 0%, 100% 89%, 0% 100%);
 }
 
+.hero .grid--1x2 {
+  margin-right: 0;
+}
+
 .hero__img {
   width: 100%;
   margin-bottom: 4rem;
@@ -819,7 +824,6 @@ a {
 
   .hero .grid--1x2 {
     column-gap: 0;
-    margin: 0 5rem;
   }
 
   .hero__content {
