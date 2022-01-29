@@ -19,7 +19,7 @@ html {
 
 body {
   font-family: "Inter", Arial, Helvetica, sans-serif;
-  background-color: gold;
+  background-color: #ffffff;
 }
 
 /* Typography */
@@ -182,6 +182,14 @@ a {
   margin: auto;
 }
 
+@media screen and (max-width: 375px) {
+  .list--banner {
+    font-size: 1.8rem;
+  }
+  .list--price-badge {
+    grid-template-columns: repeat(2, min-content);
+  }
+}
 @media screen and (min-width: 1024px) {
   .list--price-badge {
     display: flex;
@@ -196,6 +204,7 @@ a {
   width: 100%;
   margin-bottom: 4rem;
   transition: transform 0.5s;
+  box-shadow: 0 0 10px 5px rgba(194, 194, 194, 1);
 }
 
 .banner:hover {
@@ -283,7 +292,7 @@ a {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .banner__header h4 {
     font-size: 1.4rem;
   }
@@ -425,8 +434,8 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-right: 4rem;
-  padding-left: 2.3rem;
+  padding-right: 4vw;
+  padding-left: 2.3vw;
   font-size: 1.5rem;
 }
 
@@ -798,6 +807,11 @@ a {
     flex-wrap: nowrap;
   }
 
+  .nav .collapsible__content {
+    opacity: 1;
+    max-height: 100%;
+  }
+
   .nav__icon {
     display: none;
   }
@@ -849,7 +863,6 @@ a {
 
 @media (min-width: 768px) {
   .hero {
-    clip-path: none;
     padding: 9rem 3rem;
   }
 
@@ -1061,10 +1074,19 @@ a {
 }
 
 .block-footer .collapsible__list-item {
+  margin-bottom: 2.5rem;
+}
+
+.block-footer .collapsible__list-item a {
   color: #ffffff;
   font-size: 2.4rem;
+  font-weight: 400;
   opacity: 0.5;
-  margin-bottom: 2.5rem;
+  transition: opacity 0.5s;
+}
+
+.block-footer .collapsible__list-item a:hover {
+  opacity: 1;
 }
 
 .block-footer .copyright__text {
@@ -1105,7 +1127,7 @@ a {
     font-size: 1.6rem;
   }
 
-  .block-footer .collapsible__list-item {
+  .block-footer .collapsible__list-item a {
     font-size: 1.5rem;
   }
 
